@@ -15,13 +15,16 @@ body {
     text-align: left;
     border-radius: 15px;
 }
-.img {
+.img1 {
     display: block;
     width: 360px;
     height: 540px;
     float: left;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+}
+.img2 {
+    display: none;
 }
 .text {
     background-color: hsl(0, 0%, 100%);
@@ -78,6 +81,49 @@ body {
 .button:hover {
     background-color: #1f2f0a;
 }
+
 @media all and (max-width: 500px) {
-    
+    .box {
+        width: 360px;
+        height: 540px;
+        margin: auto auto;
+        text-align: left;
+        border-radius: 15px;
+    }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        display: block;
+        max-width: 100%;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        margin: auto auto;
+        margin-top: 2rem;
+    }
+    .text {
+        background-color: hsl(0, 0%, 100%);
+        display: block;
+        max-width: 360px;
+        height: 460px;
+        float: right;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 0%;
+        margin-bottom: 3rem;
+    }
+    .straight-text {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        color: #94969b;
+        margin: 1.5rem 2rem;
+        font-size: 1.05rem;
+        line-height: 180%;
+    }
+    .curly-text {
+        font-family: 'Fraunces', serif;
+        margin: 0 2rem;
+        font-size: 2rem;
+        line-height: 100%;
+    }
 }
